@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="page" class="page">
+    <!-- Breadcrumb ====== leave here -->
+    <div id="main">
+        <div id="content" class="clearfix container">
+            <div class="section">
+                <div id="main-content"></div>
+                <div class="tabs"></div>
+                <div class="region region-content">
+                    <div id="block-system-main" class="block block-system  block-system-main col-md-12">
+                        <div class="topbanner">
+                            <div class="navwrapper">
+                                <div class="banner-logo">
+                                    <img src="/static/common/logo-bulletin-brief.svg" alt="logo">
+                                </div>
+                                <div class="banner-title">
+                                    <p> 公示栏 </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bullcontent">
+                            <div>
+                                <div class="panel-pane pane-views pane-the-bulletin-pages clearfix">
+                                    <div class="pane-content">
+                                        <div class="view-content">
+%bulletin_page_items%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
