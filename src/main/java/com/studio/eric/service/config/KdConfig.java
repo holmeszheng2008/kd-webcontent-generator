@@ -79,6 +79,7 @@ public class KdConfig {
 
         public static String BULLETIN_ITEMS = "%bulletin_items%";
         public static String BULLETIN_PAGE_PARSED = "%bulletin_page_parsed%";
+        public static String BULLETIN_PAGE_SEASON_PARSED = "%bulletin_page_season_parsed%";
 
     }
 }

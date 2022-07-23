@@ -98,7 +98,8 @@ public class Generator {
         String bulletin_items = "";
         for (String postingDate : keySet) {
             String bulletin_item = kdConfig.getBulletin_item_template().replace(KdConfig.PlaceHolderNames.BULLETIN_PAGE, postingDate)
-                    .replace(KdConfig.PlaceHolderNames.BULLETIN_PAGE_PARSED, parsePostingDateToSeason(postingDate));
+                    .replace(KdConfig.PlaceHolderNames.BULLETIN_PAGE_SEASON_PARSED, parsePostingDateToSeason(postingDate))
+                    .replace(KdConfig.PlaceHolderNames.BULLETIN_PAGE_PARSED, parsePostingDate(postingDate));
             bulletin_items = bulletin_items + bulletin_item + '\n';
         }
 

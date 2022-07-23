@@ -24,7 +24,7 @@
                                 <div class="panel-pane pane-views pane-the-bulletin-pages clearfix">
                                     <div class="pane-content">
                                         <div class="view-content">
-                                            <ul>
+                                            <ul style="overflow-y: auto; height: 60vh; padding-left: 50px;">
 %bulletin_items%
                                             </ul>
                                         </div>
